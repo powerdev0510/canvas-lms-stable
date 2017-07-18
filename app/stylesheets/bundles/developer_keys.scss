@@ -1,0 +1,120 @@
+/*
+ * Copyright (C) 2015 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+@import "base/environment";
+
+#keys {
+  border-collapse: collapse;
+  width: 100%;
+  tr:hover {
+    td {
+      background-color: #eee;
+      &.links i {
+        opacity: 1;
+      }
+      .api_key {
+        visibility: visible;
+      }
+    }
+  }
+  tr.inactive {
+    td {
+      background-color: #fee;
+    }
+  }
+  tr.inactive:hover {
+    td {
+      background-color: #fcc;
+    }
+  }
+  td, th {
+    padding: 3px 5px;
+  }
+  th {
+    border-bottom: 1px dotted #888;
+    font-weight: bold;
+  }
+  td {
+    border-bottom: 1px dotted #ccc;
+    vertical-align: middle;
+    span.name {
+      font-weight: bold;
+      @include fontSize(14px);
+    }
+    &.notes {
+      width: 15%;
+      > div {
+        max-height: 100px;
+        overflow-x: auto
+      }
+    }
+    &.links i {
+      opacity: 0.4;
+    }
+    .api_key {
+      visibility: hidden;
+    }
+    .icon {
+      width: 36px;
+      height: 36px;
+      border: 1px solid #ccc;
+      padding: 2px;
+      margin-right: 5px;
+      vertical-align: middle;
+      float: left;
+    }
+    .details {
+      max-width: 200px;
+      overflow: auto;
+      > div {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+#loading {
+  text-align: center;
+  margin-top: 10px;
+  .show_all, .loader {
+    display: none;
+  }
+  &.loading {
+    .loader {
+      display: inline;
+    }
+    .show_all {
+      display: none;
+    }
+  }
+  &.show_more {
+    .loader {
+      display: none;
+    }
+    .show_all {
+      display: inline;
+    }
+  }
+}
+
+.key_form {
+  td {
+    white-space: nowrap;
+    padding: 3px 2px;
+  }
+}

@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+gemspec
+
+gem "aws-sdk-s3", "1.0.0.rc3"
+gem "rspec"
+gem "byebug"

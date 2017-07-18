@@ -1,0 +1,56 @@
+/*
+ * Copyright (C) 2014 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+// Compiler for Canvas
+//=======================
+
+// Variables (including Bootstrap and jQuery UI), mixins, and functions
+@import "base/environment";
+
+// Heavily customized vendor styles
+@import "vendor/jqueryui/jquery.ui.all";
+@import "base/custom_bootstrap";
+@import "vendor/flexboxgrid";
+
+// Canvas components and area-specific styles
+@import "components/alerts";
+@import "components/buttons";
+@import "components/g_base";
+@import "components/ic-typography";
+@import "components/accordion";
+@import "components/g_instructure";
+@import "components/tables";
+@import "components/tabs";
+@import "components/aacs";
+@import "components/g_assignments";
+@import "components/g_groups";
+@import "components/g_media_comments";
+@import "components/g_context_modules";
+@import "components/g_collaborations";
+@import "components/g_files";
+@import "components/g_wiki";
+@import "components/g_conference";
+@import "components/g_rubrics";
+@import "components/g_wiki_sidebar";
+@import "components/g_mini_calendar";
+@import "components/helpDialog";
+@import "components/ic-expand-link";
+@import "components/flickrSearch";
+@import "vendor/mediaelementplayer";
+@import "base/custom_mediaelementplayer";
+@import "bundles/context_cards";

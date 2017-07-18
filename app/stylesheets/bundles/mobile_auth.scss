@@ -1,0 +1,122 @@
+/*
+ * Copyright (C) 2013 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+@import "base/environment";
+@import "components/ic-forms";
+@import "components/buttons";
+@import "components/show_hide_opacity";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html, body {
+  height: 100%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  color: $ic-color-light;
+  background-color: black;
+  background-image:
+    linear-gradient(to bottom,  rgba(0,225,255,0.8) 0%,rgba(0,30,194,0.8) 100%),
+    url('/images/mobile_login/mobile_background.png');
+  background-size: cover;
+  min-height: 420px;  /* this is a workaround to be high enough on an iphone */
+  font-size: 114%;
+  font-family: Helvetica;
+}
+
+#f1_container {
+  position: relative;
+  margin: 0 auto;
+  padding: 110px 0;
+  width: 300px;
+  height: 198px;
+  z-index: 1;
+  background-image: url("/images/mobile_login/canvas_logo_login.svg");
+  background-position: center 30px;
+  background-repeat: no-repeat;
+  background-size: auto 60px;
+}
+
+#f1_card {
+  width: 100%;
+  height: 100%;
+}
+
+.face {
+  position: absolute;
+  padding: 15px;
+}
+
+.face.back {
+  display: none;
+}
+
+.flipped .face.back {
+  display: block;
+}
+
+.flipped .face.front {
+  display: none;
+}
+
+p {
+  margin: 15px 0;
+}
+
+.btn {
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin-bottom: 15px;
+  width: 270px;
+}
+a.btn {
+  display: block;
+  width: 270px;
+}
+.flip-to-back, .flip-to-front {
+  margin: 0;
+}
+.forgotBlock {
+  color: $ic-color-light;
+  margin: $ic-sp*2 auto 0;
+  text-align: center;
+}
+input {
+  border-radius: $ic-border-radius;
+}
+input::-webkit-input-placeholder {
+  color: $ic-color-medium;
+}
+.error {
+  background: $ic-color-danger;
+  color: $ic-color-light;
+  @include fontSize(14px);
+  margin: $ic-sp 0;
+  padding: $ic-sp/2;
+  border-radius: $borderRadius;
+  text-align: center;
+}
+.icon_url {
+  display: none;
+}

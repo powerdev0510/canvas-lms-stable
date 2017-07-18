@@ -1,0 +1,72 @@
+/*
+ * Copyright (C) 2014 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+//add variable modifications to the global _variables.scss
+//they will override bootstrap styles
+
+// CSS Reset
+@import "vendor/bootstrap/reset";
+
+// Grid system and page structure
+@import "vendor/bootstrap/grid";
+@import "vendor/bootstrap/layouts";
+
+// Base CSS
+@import "vendor/bootstrap/code";
+@import "vendor/bootstrap/forms";
+@import "vendor/bootstrap/tables";
+
+// Components: common
+@import "vendor/bootstrap/dropdowns";
+@import "vendor/bootstrap/wells";
+@import "vendor/bootstrap/component-animations";
+@import "vendor/bootstrap/close";
+
+// Components: Nav
+@import "vendor/bootstrap/navs";
+@import "vendor/bootstrap/pagination";
+
+// Components: Popovers
+@import "vendor/bootstrap/popovers";
+
+// Components: Misc
+@import "vendor/bootstrap/thumbnails";
+
+
+// Components: Misc
+@import "vendor/bootstrap/thumbnails";
+@import "vendor/bootstrap/labels-badges";
+@import "vendor/bootstrap/progress-bars";
+@import "vendor/bootstrap/media";
+
+// Utility classes
+@import "vendor/bootstrap/utilities"; // Has to be last to override when necessary
+
+
+// RESPONSIVE CLASSES
+// ------------------
+@import "vendor/bootstrap/responsive-utilities";
+
+// MEDIA QUERIES
+// ------------------
+
+// Large desktops
+@import "vendor/bootstrap/responsive-1200px-min";
+
+// Tablets to regular desktops
+@import "vendor/bootstrap/responsive-768px-979px";
